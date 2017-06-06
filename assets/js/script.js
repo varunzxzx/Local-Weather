@@ -4,7 +4,7 @@ getLocation();
 
 function getLocation() {
     
-    $.get("http://ipinfo.io", function(location) {
+    $.get("https://ipinfo.io", function(location) {
       lat = location.loc.split(",")[0];
       lon = location.loc.split(",")[1];
       console.log(lat + " " + lon);
